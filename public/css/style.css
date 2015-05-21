@@ -1,7 +1,11 @@
+* {
+	font-family: 'montserrat', arial;	
+}
+
 body {
 	background-color: #f8f8f8;
 	background-image: url('/images/tiles-03.png');
-	font-family: 'montserrat', arial;
+
 	text-transform: capitalize;
 }
 
