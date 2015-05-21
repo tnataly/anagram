@@ -1,0 +1,96 @@
+body {
+	background-color: #f8f8f8;
+	background-image: url('/images/tiles-03.png');
+	font-family: 'montserrat', arial;
+	text-transform: capitalize;
+}
+
+h1 {
+	text-align: center;
+	color: #FD3152;
+	text-transform: capitalize;
+	line-height: 70%;
+}
+
+h1.uppercase-bold {
+	font-weight: bold;
+    text-transform: uppercase;
+    
+}
+
+div.container {
+    width: 400px;
+    height: 400px;
+    
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+
+form {
+	color: grey;
+	margin: 10px auto;
+}
+
+label {
+	display: block;
+	margin-top: 50px;
+	margin-bottom: 8px;
+	font-size: 1.1em;
+	font-style: italic;
+}
+
+input[type="text"] {
+	line-height: 200%;
+	box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+ 	width: 100%;
+ 	font-size: 1.5em;
+ 	text-transform: uppercase;
+}
+
+input.btn {
+	width: 100%;
+	margin-top: 8px;
+	font-size: 1.3em;
+	background-color: #FD3152;
+	color: #F8F8F8;
+	line-height: 200%;
+	font-weight: bold;
+	font-style: italic;
+}
+
+span.extra-large {
+	font-size: 3em;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	color: #FD3152;
+}
+
+span[id="underlined"] {
+	text-decoration: underline;
+}
+
+span[id="footer"] {
+	color: grey;
+}
+
+p {
+	text-align: center;
+}
+
+a {
+	color: #FD3152;
+}
+
+a.right {
+	float: right;
+}
+
+a.left {
+	float: left;
+}

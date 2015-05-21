@@ -1,0 +1,12 @@
+<h1>Anagrams for the word </h1>
+
+<p> <span class="extra-large" id="underlined"><%= "#{@word}" %></span> </p>
+<p> <img src="/images/arrow.png" />
+
+<% @anagrams.each do |anagram| %>
+	<p> <span class="extra-large"><%= anagram%></span> </p> 
+<% end %>
+<p> <span id="footer"> Do you think there should be more anagrams here? </span><br>
+	<a class="left" href="#"> Add them here</a> 
+	<a class="right" href="#"> View all words</a>
+</p>
