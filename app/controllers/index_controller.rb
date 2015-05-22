@@ -16,12 +16,9 @@ def distinct_letters?(input)
 	end
 end
 
-def valid_input?(input)
-	if three_letter?(input) && distinct_letters?(input)
-		true
-	else
-		false
-	end
+def valid_input(input)
+	raise Exception.new("Word must be less than or equal to 3 characters.") if !three_letter?(input)
+	raise Exception.new("Word must include distinct characters.") if !distinct_letters?(input)
 end
 
 get '/anagrams/:word' do
@@ -36,10 +33,11 @@ end
 
 post '/' do
 	@word = params[:word]
-	if valid_input?(@word)
+	begin
+		valid_input(@word)
 		redirect "/anagrams/#{@word}"	
-	else
-		@error = "Your word is not valid<br>"
+	rescue Exception => error
+		@error = error.message
 		erb :index
 	end
 end

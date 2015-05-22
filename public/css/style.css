@@ -100,8 +100,8 @@ a.left {
 }
 
 p.error {
-	border: 3px solid red;
-	font-style: italic;
+	border: 3px solid black;
 	font-weight: bold;
 	font-family: Impact;
+	
 }
