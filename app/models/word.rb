@@ -16,12 +16,18 @@ def self.find_anagrams(word)
 	# split string to array & find all possible permutations
 	word_array = word.split("").permutation.to_a
 	
-	# return array of strins
+	# return array of strings
 	anagram = Array.new
 	word_array.each do |a|
-		anagram << a.join
+		anagram_to_test = a.join
+		# to skip the word itself
+		next if anagram_to_test.eql?(word)
+		# if the new anagram is a real life word
+		anagram << anagram_to_test if Word.find_by_text(anagram_to_test) 
 	end
-	
+	# if there are no anagrams finded
+	anagram << "NONE" if anagram.count < 1
+
 	return anagram
 end
 
