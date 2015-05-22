@@ -1,4 +1,4 @@
-class Word
+class Word < ActiveRecord::Base
 # It takes an array of letters & reverse it 
 def self.reverse_letters(input_letters)
 	reverse_letters = Array.new
