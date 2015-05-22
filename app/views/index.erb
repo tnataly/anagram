@@ -4,6 +4,9 @@
 
 
 <form action="/" method="post" class="form">
+	<% if @error.present? %>
+		<p class='error'> <i class="fa fa-bug fa-3x"></i> <%= "#{@error}" %> </p>
+	<% end %>
 	<label for="word">Enter the Word, Please! </label>
 	<input type="text" name="word" />
 	<input type="submit" value="Show Me My Anagrams" class="btn" />

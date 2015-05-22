@@ -98,3 +98,10 @@ a.right {
 a.left {
 	float: left;
 }
+
+p.error {
+	border: 3px solid red;
+	font-style: italic;
+	font-weight: bold;
+	font-family: Impact;
+}
