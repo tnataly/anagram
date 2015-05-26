@@ -1,3 +1,4 @@
+=begin - OLD VERSION !!!
 require 'spec_helper'
 
 describe 'Our Anagrams App' do
@@ -13,3 +14,4 @@ describe 'Our Anagrams App' do
     expect(last_response.body).to include("cat", "cta", "act", "atc", "tca", "tac")
   end  
 end
+=end

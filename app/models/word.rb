@@ -1,4 +1,14 @@
 class Word < ActiveRecord::Base
+
+before_create :add_letters
+
+# Populates letters column based on the word's text attribute
+def add_letters
+	characters = self.text.chars
+	alphabetized_characters = characters.sort
+	self.letters = alphabetized_characters.join
+end
+
 # It takes an array of letters & reverse it 
 def self.reverse_letters(input_letters)
 	reverse_letters = Array.new
