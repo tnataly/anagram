@@ -3,8 +3,10 @@
 <p> <span class="extra-large" id="underlined"><%= "#{@word}" %></span> </p>
 <p> <img src="/images/arrow.png" />
 
+<% if @anagrams.present? %>
 <% @anagrams.each do |anagram| %>
-	<p> <span class="extra-large"><%= anagram%></span> </p> 
+	<p> <span class="extra-large"><%= anagram.text %></span> </p> 
+<% end %>
 <% end %>
 <p> <span id="footer"> Do you think there should be more anagrams here? </span><br>
 	<a class="left" href="#"> Add them here</a> 
