@@ -1,6 +1,6 @@
 class Word < ActiveRecord::Base
 
-before_create :add_letters
+before_save :add_letters
 
 # Populates letters column based on the word's text attribute
 def add_letters
