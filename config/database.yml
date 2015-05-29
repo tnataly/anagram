@@ -3,16 +3,16 @@ development:
   database: anagram_dev
   pool: 5
   host: localhost
-  username: ruby
-  password: 123456789
+  username: <%= ENV["APP_POSTGRES_USER"] %>
+  password: <%= ENV["APP_POSTGRES_PASSWORD"] %>
     
 test:
   adapter: postgresql
   database: anagram_test
   pool: 5
   host: localhost
-  username: ruby
-  password: 123456789
+  username: <%= ENV["APP_POSTGRES_USER"] %>
+  password: <%= ENV["APP_POSTGRES_PASSWORD"] %>
 
 production:
   url: <%= ENV['DATABASE_URL'] %>
