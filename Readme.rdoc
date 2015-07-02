@@ -1,0 +1,11 @@
+== Anagram app
+
+This App looks for the all possibles anagrams for the word that user entered. It was created in order to play with Sinatra framework. 
+
+=== Technologies
+* Ruby 2.2.2, Sinatra 1.4.6
+* PostgreSQL
+* RSpec
+
+=== Tests
+Run the test suite with <tt>rake</tt> or <tt>rspec spec</tt>
